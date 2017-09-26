@@ -2,177 +2,165 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/DIV.css">
-		<script type="text/javascript" src="Js/jquery.min.js"></script>
-	    <script type="text/javascript" src="Js/DIV.js"></script>
-	    <script src="js/template-native.js"></script>
-        <script src="js/jquery.waterfall.js"></script>
-	    <title>DIV旅游网</title>
-        
-      
- 
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+        <style>
+        *{
+        	margin: 0;
+        	padding: 0;
+        }
+        .box{
+        	width: 100%;
+        	height: 100%;
+        	position: absolute;
+        }
+        .box img{
+        	width: 100%;
+        	height: 100%;
+        }
+        .box2{
+        	width: 100%;
+        	height: 100%;
+        	position: absolute;
+        	z-index: 100;
+        	background: rgba(0, 0, 0, 0.3);
+        }
+        .box2_1{
+        	width: 80%;
+        	height: 150px;
+        	float: left;
+        	margin-left: 10%;
+        	text-align: center;
+        	margin-top: 50px;
+        }
+        .box2_1 img{
+			width: 150px;
+			height: 150px;
+        }
+        .box3{
+        	width: 70%;
+        	float: left;
+        	margin-left: 15%;
+        	/* border: 1px solid red; */
+        	margin-top: 50px;
+        }
+        .box3_1{
+        	width: 100%;
+        	height: 40px;
+        	float: left;
+        	background: rgba(0, 0, 0, 0.7);
+        	line-height: 40px;
+        }
+        .box3_2{
+        	width: 100%;
+        	height: 40px;
+        	float: left;
+        	margin-top: 20px;
+        	background: rgba(0, 0, 0, 0.7);
+        	line-height: 40px;
+        }
+        .box3_1 input{
+        	width: 100%;
+        	height: 40px;
+        	line-height: 40px;
+        	background: rgba(0, 0, 0, 0.0);
+        	color: white;
+        	outline-style: none;
+        	list-style: none;
+        	border: 0;
+        }
+         .box3_2 input{
+        	width: 100%;
+        	height: 40px;
+        	line-height: 40px;
+        	background: rgba(0, 0, 0, 0.0);
+        	color: white;
+        	outline-style: none;
+        	list-style: none;
+        	border: 0;
+        }
+
+        .kon{
+        	width: 5%;
+        	height: 40px;
+        	float: left;
+        }
+        .in{
+        	width: 95%;
+        	height: 40px;
+        	float: left;
+        }
+        .login{
+        	width: 80%;
+        	float: left;
+        	margin-left: 10%;
+        	height: 35px;
+        	border-radius: 50px;
+        	background: #FECD07;
+        	color: white;
+        	font-size: 18px;
+        	text-align: center;
+        	margin-top: 30px;
+        	line-height: 35px;
+        }
+        .box4{
+        	width: 100%;
+        	height: 20px;
+        	text-align: center;
+        	float: left;
+        	margin-top: 20px;
+        }
+        .box4 a{
+        	color: white;
+        	font-size: 14px;
+        }
+        .box5{
+        	width: 80%;
+        	height: 40px;
+        	position: absolute;
+        	bottom: 30px;
+        	left: 10%;
+        	text-align: center;
+        	color: white;
+        }
+        .xian{
+        	width: 100%;
+        	background: white;
+        	height: 1px;
+        }
+
+        </style>
     </head>
     <body>
-	<div class="top">
-	<div class="top1">
-	<ul class="nav_list">
-		<li class="l1">DIV旅游网</li>
- 			<li>
- 				<a href="" name="top">出游计划</a>
- 				<ul>
- 					<li><a href="#">港澳台</a></li>
- 					<li><a href="#">新马泰</a></li>
- 					<li><a href="#">日韩</a></li>
- 					<li><a href="#">欧美</a></li>
- 				</ul>
- 			</li>
-
- 			<li>
- 				<a href="">出行商城</a>
- 				<ul>
- 					<li><a href="#">出行必备</a></li>
- 					<li><a href="#">出行签证</a></li>
- 					<li><a href="#">出行保险</a></li>
- 				</ul>
- 				</li>
-
- 				<li>
- 				<a href="">预定</a>
- 				<ul>
- 					<li><a href="#">特价酒店</a></li>
- 					<li><a href="#">特价机票</a></li>
- 					<li><a href="#">当地导游</a></li>
- 				</ul>
- 				</li>
- 		</ul>
-		</div>
-	</div>
-
-
-	<div class="banner_box">
-		<div class="imgs">
-			<img src="image/11.jpg">
-			<img src="image/12.jpg">
-			<img src="image/13.jpg">
-			<img src="image/14.jpg">
-		</div>
-		<div class="points">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<span class="left_btn">&lt;</span>
-		<span class="right_btn">&gt;</span>		
-	</div>
-
-	<div class="center">
-		<a href="#" class="a1">出国游</a>
-		<a href="#" class="a1">港澳台游</a>
-		<a href="#" class="a1">预定酒店</a>
-		
-		<div class="box1">
-		
-		<img src="image/rb.jpg" alt="" class="t1">	
-
-		<img src="image/hg.jpg" alt="" class="t2">
-
-		<img src="image/oz.jpg" alt="" class="t3">	
-		<p>
-		<a href="#" class="a10">日本</a>
-		<a href="#" class="a11">韩国</a>
-		<a href="#" class="a12">欧洲</a>
-       </p>
-		</div>
-		<div class="box2">
-
-		<img src="image/xg.jpg" alt="" class="t1">
-
-		<img src="image/tw.png" alt="" class="t2">
-
-		<img src="image/am.jpg" alt="" class="t3">
-		<p>
-		<a href="#" class="a10">香港</a>
-		<a href="#" class="a11">台湾</a>
-		<a href="#" class="a12">澳门</a>
-       </p>
-
-		</div>
-		<div class="box3">
-
-			<img src="image/jd.jpg" alt="" class="t1">
-
-			<img src="image/jd2.jpg" alt="" class="t2">
-
-			<img src="image/jd4.jpg" alt="" class="t3">
-		<p>
-		<a href="#" class="a10">五星酒店</a>
-		<a href="#" class="a11">商务酒店</a>
-		<a href="#" class="a12">情趣酒店</a>
-       </p>
-
-		</div>
-
-		
-	</div>
-
-	<!-- 瀑布流 -->
-	<div class="pbl">
-	<center>
-	<h2>旅游自拍展示</h2>
-	</center>	
-	<div class="img1">
-	<div><img src="image/b.jpg"></div>
-	<p>开心每一天</p>		
-	</div>
-	<div class="img2">
-	<div><img src="image/a.jpg"></div>
-	<p>开心每一天</p>	
-	</div>
-	<div class="img3">
-	<div><img src="image/c.jpg"></div>
-	<p>开心每一天</p>	
-	</div>
-	</div>
-	
-
-	<div class="wrapper">
-        <div class="items">
-                
-        </div>
-                <p class="tips loading" onclick="getData()">加载更多...</p>
-        </div>
-        <!-- 定义模板 -->
-        <script type="text/template" id='temp1'>
-        <% for(var i=0;i<items.length;i++){%>
-                <div class='item'>
-                <img src='<%=items[i].path%>'>
-                <p><%=items[i].text%></p>
-             </div>
-                <%}%>
-
-        </script>
-        <!-- ajax 获取数据 -->
-        <script>
-           function getData(){
-                // 发送ajax
-                $.ajax({
-                     url:'waterfall.php',
-                     dataType:'json',
-                     success:function(data){
-                        console.log(data);
-                        // 获取数据
-                        var str =template('temp1',data);
-                        // 添加到页面
-                        $('.items').append(str);
-
-                        $('.items').waterfall();
-                     }   
-                })
-           }
-        </script>
-
-
-	
+    <div class="box">
+    	<img src="come.png" alt="">
+    </div>
+    <div class="box2">
+    	<div class="box2_1">
+    		<img src="head.png" alt="">
+    	</div>
+    	<div class="box3">
+    	<div class="box3_1">
+    		<div class="kon"></div>
+    		<div class="in"><input type="tel" placeholder="手机"></div>
+    	</div>	
+    	<div class="box3_2">
+    		<div class="kon"></div>
+    		<div class="in"><input type="password" placeholder="密码"></div>
+    	</div>	
+    	<div class="login">
+    		登 录
+    	</div>
+    	<div class="box4">
+    		<a href="">忘记密码？</a>
+    	</div>
+    	<div style="clear: both;"></div>	
+    	</div>
+    	<div class="box5">
+    		注册新用户
+    		<div class="xian"></div>
+    	</div>
+    </div>
     </body>
 </html>
